@@ -12,7 +12,8 @@ public class BoardScript : MonoBehaviour {
 	public void SpawnDice() {
 		Transform dice_spawns = transform.Find("DiceSpawns");
 		foreach(Transform child in dice_spawns.transform){
-			GameObject dice_object = (GameObject)Network.Instantiate(dice_prefab, child.position, Quaternion.identity, 0);
+			//GameObject dice_object = (GameObject)
+			Network.Instantiate(dice_prefab, child.position, Quaternion.identity, 0);
 		}
 		Transform token_spawns = transform.Find("TokenSpawns");
 		var count = 0;

@@ -9,15 +9,15 @@ public class ColorPalette : MonoBehaviour {
 	public static Color GetColor(int which) {
 		switch(which){
 			case 0:
-				return Color255(175,0,37); break;
+				return Color255(175,0,37);// break;
 			case 1:
-				return Color255(9,144,239); break;
+				return Color255(9,144,239);// break;
 			case 2:
-				return Color255(2,255,32); break;
+				return Color255(2,255,32);// break;
 			case 3:
-				return Color255(255,223,97); break;
+				return Color255(255,223,97);// break;
 			default:
-				return Color255(0,0,0); break;
+				return Color255(0,0,0);// break;
 		}
 	}
 }

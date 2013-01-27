@@ -100,9 +100,10 @@ public class NetUIScript : MonoBehaviour {
 	
 	public void SpawnHealthTokens() {
 		foreach(GameObject play_area in play_areas){
-			Transform token_spawns = play_area.transform.Find("TokenSpawns");
+			//Transform token_spawns = play_area.transform.Find("TokenSpawns");
 			foreach(Transform token_spawn in play_area.transform.FindChild("token_spawns")){
-				GameObject token_object = (GameObject)Network.Instantiate(token_prefab, token_spawn.position, Quaternion.identity, 0);
+				//GameObject token_object = (GameObject)
+				Network.Instantiate(token_prefab, token_spawn.position, Quaternion.identity, 0);
 			}
 		}
 	}
@@ -112,7 +113,7 @@ public class NetUIScript : MonoBehaviour {
 			SetState(State.NONE);
 		}
 		ConsoleScript.Log("Server initialized");
-		int player_id = int.Parse(Network.player.ToString());
+		//int player_id = int.Parse(Network.player.ToString());
 		TellServerPlayerName(player_name_);
 		Network.Instantiate(board_prefab, GameObject.Find("board_spawn").transform.position, GameObject.Find("board_spawn").transform.rotation,0);
 		int count = 0;

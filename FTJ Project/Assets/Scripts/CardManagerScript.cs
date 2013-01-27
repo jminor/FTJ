@@ -21,7 +21,7 @@ public class CardManagerScript : MonoBehaviour {
 			back_materials.Add(mat);
 		}
 		var card_bake_object = (GameObject)GameObject.Instantiate(card_bake_prefab);
-		int next_id = 0;
+		//int next_id = 0;
 		var dict = Json.Deserialize(deck_json.text) as Dictionary<string,object>;
 		foreach(var pair in dict){
 			var deck_name = (string)pair.Key;
