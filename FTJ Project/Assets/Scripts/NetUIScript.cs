@@ -12,7 +12,7 @@ public class NetUIScript : MonoBehaviour {
 	const string GAME_IDENTIFIER = "DesperateGodsv41";
 	const string GAME_DISPLAY_IDENTIFIER = "DesperateGodsv42";
 	const int DEFAULT_PORT = 25000;
-	const int MAX_PLAYERS = 9;
+	const int MAX_PLAYERS = 10;
 	const int MAX_CONNECTIONS = MAX_PLAYERS-1;
 	const int MIN_TEXT_FIELD_WIDTH = 200;
 	HostData last_tried_server_ = null;
